@@ -29,6 +29,7 @@ jobs:
             ansible-playbook -i inventory.txt main.yml
       - run:
           name: "Display server kernel version information"
+          command: |
             lsb_release -a
 
 # Invoke jobs via workflows
