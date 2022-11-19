@@ -16,7 +16,7 @@ jobs:
       - run: 
           name: Install curl command
           command: |
-            apk add --updates curl
+            apk add --update curl
       - run:
           name: smoke test
           command: |
